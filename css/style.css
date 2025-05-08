@@ -1,0 +1,198 @@
+/* 
+   Custom CSS for Digital Solutions Website
+   Built with Bootstrap 5
+*/
+
+/* Global styles */
+:root {
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-dark: #212529;
+    --bs-light: #f8f9fa;
+    --bs-font-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    color: #333;
+}
+
+/* Custom background gradient */
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #0a58ca 100%);
+}
+
+/* Enhance feature icons */
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Navigation tweaks */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* Hero section enhancements */
+header.bg-primary {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #0a58ca 100%) !important;
+}
+
+/* Card enhancements */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button styles */
+.btn {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+}
+
+.btn-outline-light:hover {
+    color: var(--bs-primary);
+}
+
+/* Footer enhancements */
+footer {
+    background-color: var(--bs-dark) !important;
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+footer a:hover {
+    color: var(--bs-primary) !important;
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-floating label {
+    color: #6c757d;
+}
+
+/* Testimonial cards */
+.text-primary .fas.fa-star,
+.text-primary .fas.fa-star-half-alt {
+    color: #ffc107 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .feature {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* Social media icons in footer */
+footer .d-flex.gap-3 a {
+    transition: transform 0.2s ease;
+}
+
+footer .d-flex.gap-3 a:hover {
+    transform: scale(1.2);
+}
+
+/* Rounded corners for images */
+.img-fluid.rounded {
+    border-radius: 0.5rem !important;
+}
+
+/* Animated link underline effect */
+.text-decoration-none {
+    position: relative;
+    color: var(--bs-primary);
+}
+
+.text-decoration-none::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bs-primary);
+    transition: width 0.3s ease;
+}
+
+.text-decoration-none:hover::after {
+    width: 100%;
+}
+
+/* Process cards with hover effect */
+.card.overflow-hidden.shadow.rounded-4 {
+    transition: all 0.3s ease;
+}
+
+.card.overflow-hidden.shadow.rounded-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Accordion styling */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--bs-primary);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+} 

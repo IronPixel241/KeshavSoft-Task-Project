@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions | Contact</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-laptop-code me-2"></i>Digital Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Contact Us</h1>
+                <p class="lead mb-0">We'd love to hear from you</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact section-->
+    <section class="py-5">
+        <div class="container px-5">
+            <!-- Contact form-->
+            <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="fas fa-envelope"></i></div>
+                    <h2 class="fw-bolder">Get in touch</h2>
+                    <p class="lead mb-0">We're here to answer your questions</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <form id="contactForm">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+                                <label for="name">Full name</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <!-- Subject input-->
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="subject" aria-label="Subject">
+                                    <option selected disabled>Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <!-- Submit Button-->
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact cards-->
+            <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="h5 mb-2">Visit us</div>
+                    <p class="text-muted mb-0">123 Innovation Drive<br>Tech City, TC 12345</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="fas fa-phone"></i></div>
+                    <div class="h5">Call us</div>
+                    <p class="text-muted mb-0">(555) 123-4567</p>
+                    <p class="text-muted mb-0">Mon-Fri, 9AM-5PM</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="fas fa-envelope"></i></div>
+                    <div class="h5">Email us</div>
+                    <p class="text-muted mb-0">info@digitalsolutions.com</p>
+                    <p class="text-muted mb-0">support@digitalsolutions.com</p>
+                </div>
+                <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="fas fa-comments"></i></div>
+                    <div class="h5">Live chat</div>
+                    <p class="text-muted mb-0">Chat with our support team</p>
+                    <a href="#" class="btn btn-sm btn-primary mt-2">Start Chat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map section-->
+    <section class="py-5 bg-light">
+        <div class="container px-5">
+            <div class="row gx-5">
+                <div class="col-12">
+                    <h2 class="fw-bolder mb-4">Find us on the map</h2>
+                    <div class="rounded overflow-hidden mb-4">
+                        <div class="ratio ratio-16x9">
+                            <!-- Placeholder for a map (in a real project, you would embed a Google Map or similar) -->
+                            <div class="bg-secondary d-flex align-items-center justify-content-center text-white">
+                                <div class="text-center">
+                                    <i class="fas fa-map fa-4x mb-3"></i>
+                                    <h4>Map Placeholder</h4>
+                                    <p class="mb-0">In a real project, an interactive map would be embedded here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container px-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Frequently Asked Questions</h2>
+                <p class="lead mb-0">Find answers to common questions</p>
+            </div>
+            <div class="row gx-5">
+                <div class="col-xl-8 col-lg-10 mx-auto">
+                    <div class="accordion mb-5" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What services do you offer?</button></h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    We offer a wide range of digital services including web development, mobile app development, digital marketing, and UI/UX design. Visit our <a href="services.html">services page</a> for more details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How much do your services cost?</button></h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Our pricing varies depending on the scope and requirements of each project. We provide customized quotes after understanding your specific needs. Contact us for a free consultation and quote.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How long does it take to complete a project?</button></h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Project timelines depend on complexity and scope. A simple website might take 2-4 weeks, while complex web applications or mobile apps can take several months. We'll provide a detailed timeline during our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Do you provide ongoing support after project completion?</button></h3>
+                            <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Yes, we offer various maintenance and support packages to ensure your digital solutions continue to run smoothly. Our team is available to provide updates, fixes, and enhancements as needed.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white">Digital Solutions</h5>
+                    <p class="text-muted mb-4">Transforming businesses through innovative technology solutions.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Services</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="services.html" class="text-muted">Web Development</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Mobile Apps</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-muted">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white">Stay Updated</h5>
+                    <p class="text-muted mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address" aria-describedby="button-newsletter" />
+                        <button class="btn btn-primary" id="button-newsletter" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white-50 my-4">
+            <div class="text-white-50 small text-center">Copyright &copy; Digital Solutions 2023</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
